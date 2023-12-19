@@ -1,0 +1,40 @@
+# inference options
+condition_frame_encoder: True
+context_size: 7
+d_latents: 128
+dropout_attractors: 0.1
+dropout_frames: 0.1
+epochs: <checkpoints to average, for example 65-75>
+estimate_spk_qty: -1
+estimate_spk_qty_thr: 0.5
+feature_dim: 23
+frame_encoder_heads: 4
+frame_encoder_layers: 4
+frame_encoder_units: 2048
+frame_shift: 80
+frame_size: 200
+gpu: 0
+infer_data_dir: <Kaldi data directory for inference files>
+input_transform: logmel_meannorm
+latents2attractors: weighted_average
+median_window_length: 11
+model_type: AttractorPerceiver
+models_path: <directory with checkpoints>
+n_attractors: 10
+n_blocks_attractors: 3
+n_internal_blocks_attractors: 1
+n_latents: 128
+n_selfattends_attractors: 2
+n_sa_heads_attractors: 4
+n_xa_heads_attractors: 4
+num_frames: -1
+pre_xa_heads: 4
+rttms_dir: <output RTTMs directory>
+sampling_rate: 8000
+seed: 3
+subsampling: 10
+time_shuffle: False
+threshold: 0.5
+use_frame_selfattention: True
+use_posenc: False
+use_pre_crossattention: True
