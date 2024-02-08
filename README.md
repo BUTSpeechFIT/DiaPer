@@ -36,7 +36,7 @@ Other versions might work but these were the settings used for this work.
 
 Run the example
 ```bash
-./examples/run_example.sh
+./run_example.sh
 ```
 If it works, you should be set.
 
