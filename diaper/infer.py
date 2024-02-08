@@ -227,8 +227,8 @@ def postprocess_output(
     filtered = np.zeros(thresholded.shape)
     for spk in range(filtered.shape[1]):
         filtered[:, spk] = medfilt(
-            thresholded[:, spk],
-            kernel_size=median_window_length)
+            thresholded[:, spk].to(float),
+            kernel_size=median_window_length).astype(bool)
     probs_extended = np.repeat(filtered, subsampling, axis=0)
     return probs_extended
 
