@@ -24,13 +24,13 @@ conda install numpy
 conda install -c conda-forge tensorboard
 pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 pip install safe_gpu
-pip install yamlargparse
-pip install scikit-learn
-pip install decorator
+pip install yamlargparse==1.31.1
+pip install scikit-learn==1.0.2
+pip install decorator==5.1.1
 pip install librosa==0.9.1
 pip install setuptools==59.5.0
-pip install h5py
-pip install matplotlib
+pip install h5py==3.8.0
+pip install matplotlib==3.5.3
 ```
 Other versions might work but these were the settings used for this work.
 
